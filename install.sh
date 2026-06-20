@@ -1,7 +1,7 @@
 #!/bin/sh
 # 新 Mac の環境再現ブートストラップ。
 #
-#   sh -c "$(curl -fsLS https://raw.githubusercontent.com/akira-toriyama/dotfiles/main/install.sh)"
+#   sh -c "$(curl -fsLS https://raw.githubusercontent.com/emmett-lathrop-brown/dotfiles/main/install.sh)"
 #
 # 流れ:
 #   1. Xcode Command Line Tools

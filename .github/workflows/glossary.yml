@@ -1,7 +1,7 @@
 name: Deploy glossary site
 
 # 本リポの docs/glossary.md から専用 SPA を生成し、
-# https://akira-toriyama.github.io/dotfiles/ に公開する。
+# https://emmett-lathrop-brown.github.io/dotfiles/ に公開する。
 # 実体 (builder + viewer) は akira-toriyama/glossary-site の reusable workflow に委譲。
 #
 # - push to main → build + deploy

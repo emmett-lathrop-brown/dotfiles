@@ -70,7 +70,7 @@ export PATH
 
 FLAKE_DIR="${DOTFILES_FLAKE_DIR:-}"
 if [ -z "$FLAKE_DIR" ] && command -v ghq >/dev/null 2>&1; then
-  FLAKE_DIR=$(ghq list -p github.com/akira-toriyama/dotfiles 2>/dev/null | head -1)
+  FLAKE_DIR=$(ghq list -p github.com/emmett-lathrop-brown/dotfiles 2>/dev/null | head -1)
 fi
 if [ -z "$FLAKE_DIR" ] && [ -d "$HOME/dotfiles" ]; then
   FLAKE_DIR="$HOME/dotfiles"

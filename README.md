@@ -4,7 +4,7 @@
 ## 環境再現コマンド
 
 ```sh
-sh -c "$(curl -fsLS https://raw.githubusercontent.com/akira-toriyama/dotfiles/main/install.sh)"
+sh -c "$(curl -fsLS https://raw.githubusercontent.com/emmett-lathrop-brown/dotfiles/main/install.sh)"
 ```
 
 `install.sh` の流れ: Xcode CLT → **workspace volume (case-sensitive APFS) 作成** → Determinate Nix → リポジトリ clone →
@@ -18,13 +18,13 @@ workspace volume は `/Volumes/workspace` に作られ、ghq の clone 先 (`GHQ
 Nix インストーラの `Proceed? [Y/n]` プロンプトを skip し、対話なしで完走させたい場合は `CI=true` を前置する (CI 環境 / Tart VM 検証 / 不在中の自動化想定)。
 
 ```sh
-CI=true sh -c "$(curl -fsLS https://raw.githubusercontent.com/akira-toriyama/dotfiles/main/install.sh)"
+CI=true sh -c "$(curl -fsLS https://raw.githubusercontent.com/emmett-lathrop-brown/dotfiles/main/install.sh)"
 ```
 
 API rate limit (60 req/hr per IP) 回避したい場合は `GITHUB_TOKEN` も併せて注入できる (省略時は unauth quota で十分通る想定):
 
 ```sh
-CI=true GITHUB_TOKEN=$(gh auth token) sh -c "$(curl -fsLS https://raw.githubusercontent.com/akira-toriyama/dotfiles/main/install.sh)"
+CI=true GITHUB_TOKEN=$(gh auth token) sh -c "$(curl -fsLS https://raw.githubusercontent.com/emmett-lathrop-brown/dotfiles/main/install.sh)"
 ```
 
 作業ルール／規約は [CLAUDE.md](CLAUDE.md) に集約し、機械検知できるものは [.github/workflows/ci.yml](.github/workflows/ci.yml) で強制している。

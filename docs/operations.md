@@ -34,7 +34,7 @@ chezmoi apply -v
 chezmoi status      # クリーン（差分なし）を確認
 
 # ⑤ ここから git 側（source を main に刻む）。chezmoi 側とは独立した工程。
-cd "$(ghq root)/github.com/akira-toriyama/dotfiles"
+cd "$(ghq root)/github.com/emmett-lathrop-brown/dotfiles"
 git status
 git checkout -b chore/sync-chord-config
 git add chezmoi/dot_config/chord/private_config.toml
@@ -83,7 +83,7 @@ brew install --cask foo
 #    ~/Library/Preferences/*.plist → defaults.nix で書く（chezmoi ではない）
 
 # 5. ローカルで非破壊チェック
-cd "$(ghq root)/github.com/akira-toriyama/dotfiles"
+cd "$(ghq root)/github.com/emmett-lathrop-brown/dotfiles"
 nix flake check --no-build
 nix run nix-darwin#darwin-rebuild -- build --flake .#default --impure
 
@@ -227,7 +227,7 @@ diff <(brew list --cask | sort) \
 
 新 Mac で（Apple Silicon の chip transfer 後、ターミナル一発）:
 ```sh
-sh <(curl -fsSL https://raw.githubusercontent.com/akira-toriyama/dotfiles/main/install.sh)
+sh <(curl -fsSL https://raw.githubusercontent.com/emmett-lathrop-brown/dotfiles/main/install.sh)
 ```
 
 これだけで:

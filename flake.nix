@@ -1,5 +1,5 @@
 {
-  description = "akira-toriyama macOS environment (nix-darwin + home-manager)";
+  description = "emmett-lathrop-brown macOS environment (nix-darwin + home-manager)";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";

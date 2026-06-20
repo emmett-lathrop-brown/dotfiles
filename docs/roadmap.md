@@ -86,7 +86,7 @@ PAT/トークン等で chezmoi テンプレが要るようになったら `chezm
 
 - [x] **CLI を `home.packages` へ**: op, gh, chezmoi, ghq, jq, mas（commit 5adc5ed/e26d65b）
 - [x] **cask を `nix-darwin homebrew.casks` へ**: 20本宣言済（残: `google-japanese-ime` は破棄方針で意図的に未宣言）
-- [x] **カスタム tap 由来 brew は全 drop**（ユーザー方針: 新PC で WM スタック再構築。rift / skhd-zig / borders / yabai / krp / akira-toriyama 自作4本すべて未宣言、commit d8dd2d2）
+- [x] **カスタム tap 由来 brew は全 drop**（ユーザー方針: 新PC で WM スタック再構築。rift / skhd-zig / borders / yabai / krp / emmett-lathrop-brown 自作4本すべて未宣言、commit d8dd2d2）
   - 波及: focusfx は borders 前提 → 新PC で no-op、chezmoi/dot_config/{rift, focusfx} は orphan ソースとして残置
 - [x] **mas を `homebrew.masApps` へ**: `brew upgrade mas` で 1.8.6 → 7.0.0 化により macOS 15+ の破損が解消。EdgeView 3 (id=1580323719) を declare 復活、switch で正常動作確認（21 deps complete）
 - [x] **要判断項目を決着**: docker stack(docker/docker-compose/colima)のみ Nix 化保持、残 formula leaves(act/asdf/cliclick/cmake/ninja/gperf/direnv/f2/gifski/git-cliff/node/pipx/shellcheck/sleepwatcher/watchman/yt-dlp/trash/yabai 18本)は全 drop(新PC で install されない)

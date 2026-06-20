@@ -19,7 +19,7 @@
 # 詳細設計: docs/reproduction-architecture.md
 set -e
 
-GITHUB_USERNAME="akira-toriyama"
+GITHUB_USERNAME="emmett-lathrop-brown"
 BRANCH="${BRANCH:-main}"
 REPO_DIR="${REPO_DIR:-$HOME/dotfiles}"
 FLAKE_HOST="${FLAKE_HOST:-default}"
